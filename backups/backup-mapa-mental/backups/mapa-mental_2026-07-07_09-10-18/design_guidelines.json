@@ -1,0 +1,146 @@
+{
+  "theme": "Light",
+  "archetype": "Archetype 3 (Pastel & Soft) + Neo-Brutalist Twist",
+  "core_philosophy": "A Whimsical-style unlimited mind map tool. Optimistic, approachable pastels grounded by harsh, utilitarian black borders. This 'tactile brutalism' prevents the app from feeling childish and provides sharp contrast for productivity.",
+  "colors": {
+    "background": {
+      "app": "#FDFBF7",
+      "canvas": "#F3F4F6",
+      "dot_grid": "#D1D5DB"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#4B5563",
+      "muted": "#6B7280",
+      "inverse": "#FFFFFF"
+    },
+    "borders": {
+      "hard": "#000000",
+      "soft": "#E5E7EB"
+    },
+    "accents": {
+      "yellow": "#FDE047",
+      "mint": "#86EFAC",
+      "lavender": "#D8B4FE",
+      "peach": "#FDBA74",
+      "blue": "#93C5FD",
+      "pink": "#F9A8D4"
+    },
+    "primary_brand": "#000000",
+    "primary_brand_hover": "#374151"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "'Outfit', sans-serif",
+      "weights": ["600", "800"],
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "font_family": "'Work Sans', sans-serif",
+      "weights": ["400", "500"]
+    },
+    "node_text": {
+      "font_family": "'Outfit', sans-serif",
+      "weights": ["500", "700"]
+    },
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-bold",
+      "body": "text-base",
+      "small": "text-sm",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "layout": {
+    "spacing_scale": "Tailwind standard (p-4, p-6, p-8), but doubled for containers (e.g., p-8 to p-12 for dashboard wrappers).",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8",
+    "canvas_background": "bg-[#F3F4F6] bg-[radial-gradient(#D1D5DB_2px,transparent_2px)] [background-size:24px_24px]",
+    "floating_toolbars": "absolute z-50 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-xl p-2 flex gap-2 items-center"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-black text-white font-bold py-2 px-4 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all",
+      "secondary": "bg-white text-black font-bold py-2 px-4 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-gray-50 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all",
+      "accent_yellow": "bg-[#FDE047] text-black font-bold py-2 px-4 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
+    },
+    "cards": {
+      "dashboard_map_card": "bg-white border-2 border-black rounded-xl p-0 overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 cursor-pointer flex flex-col group",
+      "thumbnail_area": "h-40 bg-gray-50 border-b-2 border-black relative overflow-hidden flex items-center justify-center bg-[radial-gradient(#D1D5DB_2px,transparent_2px)] [background-size:12px_12px]",
+      "card_content": "p-4 flex flex-col gap-1"
+    },
+    "inputs": {
+      "text": "w-full bg-white border-2 border-black rounded-lg px-4 py-2 font-['Work_Sans'] text-black focus:outline-none focus:ring-4 focus:ring-[#FDE047] focus:border-black transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+    },
+    "mind_map_nodes": {
+      "base": "absolute border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center p-4 min-w-[120px] min-h-[60px] cursor-grab active:cursor-grabbing hover:ring-4 hover:ring-black/10 transition-shadow",
+      "shapes": {
+        "rectangle": "rounded-lg",
+        "pill": "rounded-full px-6",
+        "diamond": "rotate-45"
+      },
+      "colors": ["bg-[#FDE047]", "bg-[#86EFAC]", "bg-[#D8B4FE]", "bg-[#FDBA74]", "bg-[#93C5FD]", "bg-white"]
+    },
+    "mind_map_edges": {
+      "style": "stroke-black stroke-[3px] fill-none",
+      "arrow_head": "fill-black"
+    }
+  },
+  "interactions_and_motion": {
+    "hover": "Neo-brutalist lift: -translate-y-1 and increase hard shadow offset to 6px or 8px.",
+    "active": "Press down effect: translate-y-1 and reduce shadow offset to 0px.",
+    "canvas_pan": "Smooth panning cursor (grab/grabbing).",
+    "transitions": "Use `transition-all duration-200 ease-in-out` for all hover states."
+  },
+  "language": {
+    "locale": "pt-BR",
+    "common_terms": {
+      "login": "Entrar",
+      "register": "Criar Conta",
+      "email": "E-mail",
+      "password": "Senha",
+      "dashboard": "Meus Mapas",
+      "create_new": "Novo Mapa Mental",
+      "untitled_map": "Mapa sem título",
+      "export_png": "Exportar como PNG",
+      "share_public": "Compartilhar Link Público",
+      "copy_link": "Copiar Link",
+      "last_edited": "Última edição",
+      "delete": "Excluir",
+      "settings": "Configurações",
+      "public_view_badge": "Visualização Pública"
+    }
+  },
+  "accessibility_and_testing": {
+    "data_testid_rules": "All interactive elements MUST have a `data-testid` attribute (kebab-case). Examples: `login-submit-button`, `create-map-button`, `map-card-{id}`, `export-png-button`, `share-link-button`, `node-{id}`, `canvas-area`.",
+    "contrast": "Text inside pastel nodes must be pure black (#000000) or dark charcoal (#111827) to meet APCA contrast ratios."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "auth_background",
+        "url": "https://images.unsplash.com/photo-1710244182004-1c708b3f146d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHxjcmVhdGl2ZSUyMGFic3RyYWN0JTIwc2hhcGVzfGVufDB8fHx8MTc4MzM5MTI1M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract creative 3D shapes. Use as a decorative side panel on the authentication screen (Login/Register). Give it a border-l-2 border-black.",
+        "alt": "Formas abstratas criativas"
+      },
+      {
+        "category": "empty_state_dashboard",
+        "url": "https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxibGFuayUyMHN0aWNreSUyMG5vdGVzfGVufDB8fHx8MTc4MzM5MTI1M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Colorful sticky notes on a board. Use this inside the 'Empty State' placeholder when the user has 0 mind maps on their dashboard. Add a soft opacity or grayscale blend if needed to fit the aesthetic.",
+        "alt": "Post-its coloridos"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the Portuguese ('pt-BR') locale for all visible text, as defined in 'language.common_terms'.",
+    "Implement the authentication flow using standard forms and Shadcn UI elements but heavily overwrite Shadcn's default Vercel-like styling to match the Neo-brutalist pastel theme (border-2 border-black, solid shadows like shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]).",
+    "For the Mind Map Canvas, implement an infinite pan/zoom area. You MUST use 'reactflow' (React Flow) which perfectly handles nodes and edges, but style the custom nodes using the 'mind_map_nodes' CSS rules defined above. Do not use default React Flow styles.",
+    "Add a minimap and smooth zoom controls for the canvas (essential for UX in 2026 patterns).",
+    "Use '@phosphor-icons/react' for UI icons (install via yarn add @phosphor-icons/react) to fit the modern bold aesthetic.",
+    "Ensure the floating toolbars on the canvas are wrapped in draggable or absolute positioned containers with the 'floating_toolbars' styles.",
+    "Implement the PNG export (e.g. using html-to-image) and Public Share features as specified, ensuring the public view is completely read-only.",
+    "CRITICAL: Do not use 'Inter' for headings. Ensure 'Outfit' and 'Work Sans' are imported via Google Fonts in index.css.",
+    "All cards, buttons, and inputs MUST have the hard black shadow `shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]` and solid 2px borders.",
+    "Provide functionality to edit node colors, shapes, and text via a floating toolbar that appears when a node is selected."
+  ]
+}

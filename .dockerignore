@@ -1,0 +1,13 @@
+.git/
+backups/
+memory/
+test_reports/
+tests/
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/.env
+**/.env.*
+*.log
+.gitignore
+README.md
