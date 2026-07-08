@@ -12,6 +12,7 @@ __pycache__/
 backend/logs/
 uploads/*
 !uploads/.gitkeep
+backups/
 .DS_Store
 Thumbs.db
 *.log
